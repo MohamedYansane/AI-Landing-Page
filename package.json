@@ -2,7 +2,6 @@
   "name": "ai-startup-landing-page",
   "version": "0.1.0",
   "private": true,
- 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,4 +28,4 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
-},{ "type": "module",}
+}
