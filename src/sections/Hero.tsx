@@ -9,7 +9,7 @@ export const Hero = () => {
       {/**after the thir ring let gice inset-0 to this so that it will have the same size with section inset-0 to have the same size like the section */}
       <div className="absolute inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_78%,transparent)]"></div>
       {/** Start Planet styl the negative value in shadow is -20 t0 top and -20 t0 left and blur represent the postive value  */}
-      <div className="absolute h-64 md:h-96 m:wd-96 w-64 bg-purple-500 rounded-full border border-white/20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0,66))] shadow-[-20px_-20px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(140,69,255)]"></div>
+      <div className="absolute h-64 md:w-96 md:h-96 w-64 bg-purple-500 rounded-full border border-white/20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0,66))] shadow-[-20px_-20px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(140,69,255)]"></div>
       {/**End Planet */}
       {/** we remove the border opacity otherwise you'll see when it crossing and we give to the whole thing opacity-20*/}
 
