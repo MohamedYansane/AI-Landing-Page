@@ -1,3 +1,4 @@
+"use client";
 import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
@@ -31,5 +32,16 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
-  return <section>Testimonials</section>;
+  return (
+    <section>
+      <div className="container">
+        <h2>Beyond Expectations.</h2>
+        <p>
+          Our revolutionary AI SEO tools have transformed our clients'
+          strategies.
+        </p>
+        {}
+      </div>
+    </section>
+  );
 };
