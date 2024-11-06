@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
@@ -45,10 +46,22 @@ export const Testimonials = () => {
           strategies.
         </p>
         <div className="overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
-          <div className="flex gap-5 ">
-            {testimonials.map((testimonial) => (
+          <div className="flex gap-5 flex-none">
+            {[...testimonials, ...testimonials].map((testimonial) => (
               //by adding a fex-none it will mean its not the parent which wrapping them is controlling there size
-              <div
+
+              <motion.div
+                initial={{
+                  translateX: "-50%",
+                }}
+                animate={{
+                  translateX: "0",
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 30,
+                  ease: "linear",
+                }}
                 className="border border-white/15 p-6 md:p-10  rounded-xl bg-[linear-gradient(to_bottom_left,rgb(140,69,255,.3),black)] max-w-xs md:max-w-md flex-none "
                 key={testimonial.name}
               >
@@ -71,7 +84,7 @@ export const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
