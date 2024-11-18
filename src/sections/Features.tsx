@@ -74,7 +74,7 @@ const FeatureTab = (tab: (typeof tabs)[number]) => {
   return (
     <div
       onMouseEnter={handleTabHover}
-      className="relative border border-white/15 flex p-2.5 rounded-xl gap-2.5 items-center"
+      className="relative border border-white/15 flex p-2.5 h rounded-xl gap-2.5 items-center"
     >
       {/**to animater our border when we hover we gonna create this div below  */}
       {/** en mettant le inset 0 il a la meme taille que mon div du coup je veux qu'il sort un  */}
